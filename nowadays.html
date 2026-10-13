@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сьогодення</title>
+    <meta charset="UTF-8">
+    <title>Сьогодення</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 22px;
+      }
+
+      p.back-link {
+        font-style: italic;
+      }
+
+      #shopping-list {
+        text-align: center;
+      }
+
+      ul li:nth-child(odd) {
+        background-color: lightgray;
+      }
+
+      ul li:nth-child(even) {
+        background-color: white;
+      }
+
+      ol li:nth-child(3):hover,
+      ol li:nth-child(5):hover {
+        cursor: pointer;
+      }
+
+      ol li:nth-child(4) {
+        background-color: lightgreen;
+      }
+    </style>
 </head>
 <body>
-  <header>
-    <nav><p><a href="index.html">← Назад на головну</a></p></nav>
+
     <h1 id="top">Сьогодення Максиміва Євгенія Івановича</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Мій типовий список продуктів</h2>
-      <h3>Молочні продукти</h3>
-      <ul>
-        <li>Молоко</li>
-        <li>Вершкове масло</li>
-        <li>Творог (кисломолочний сир)</li>
-      </ul>
-      <h3>Продукти для набору маси</h3>
-      <ul>
-        <li>Макарони</li>
-        <li>Яйця</li>
-        <li>Рис</li>
-      </ul>
-      <h3>Продукти, які я намагаюсь не брати</h3>
-      <ul>
-        <li>Алкоголь</li>
-        <li>Шоколад</li>
-        <li>Газовані напої</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Приготування омлету</h2>
-      <ol>
-        <li>Увімкнути плиту</li>
-        <li>Підготувати інгредієнти:
-          <ol>
-            <li>Взяти 3 яйця</li>
-            <li>Дістати вершкове масло</li>
-            <li>Підготувати сіль та перець</li>
-          </ol>
-        </li>
-        <li>Розігріти сковороду</li>
-      </ol>
-      <h2>Процес приготування:</h2>
-      <ol>
-        <li>Розбити яйце:
-          <ul>
-            <li>Викинути шкарлупу у смітник</li>
-          </ul>
-        </li>
-        <li>Смажити омлет</li>
-        <li>Перевернути на другу сторону</li>
-        <li>Завершити приготування</li>
-        <li>Додати до страви:
-          <ol>
-            <li>Сіль</li>
-            <li>Перець</li>
-          </ol>
-        </li>
-        <li>Насолоджуватись приємним сніданком</li>
-      </ol>
-    </section>
-  </main>
-  <footer>
-    <hr>
-    <p><a href="#top">Уверх </a></p>
-  </footer>
+    <p class="back-link"><a href="index.html">Назад на головну</a></p>
+
+    <h2 id="shopping-list">Мій типовий список продуктів</h2>
+    
+    <h3>Молочні продукти</h3>
+    <ul>
+      <li>Хліб</li>
+      <li>Молоко</li>
+      <li>Кава</li>
+      <li>Цукерки</li>
+    </ul>
+
+    <h3>Продукти для набору маси</h3>
+    <ul>
+      <li>Макарон</li>
+      <li>Яйця</li>
+      <li>Рис</li>
+    </ul>
+
+    <h3>Продукти які я намагаюсь не брати</h3>
+    <ul>
+      <li>Алкоголь</li>
+      <li>Шоколад</li>
+      <li>Газировки</li>
+    </ul>
+
+    <h2>Приготування омлету</h2>
+    <ol>
+      <li>Увімкнути плиту</li>
+      <li>Підготувати інгредієнти:
+        <ol>
+          <li>Взяти 3 яйця</li>
+          <li>Дістати вершкове масло</li>
+          <li>Підготувати сіль та перець</li>   
+        </ol>
+      </li>
+      <li>Розігріти сковороду</li>
+      <li>Розбити яйце</li>
+      <li>Смажити омлет</li>
+      <li>Перевернути на другу сторону</li>
+    </ol>
+
 </body>
 </html>
