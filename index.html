@@ -2,40 +2,55 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Головна сторінка</title>
+    <title>Персональна сторінка</title>
     <style>
-      h1 {
-        text-align: center;
-        font-size: 24px;
-      }
-      p {
-        font-size: 120%;
-      }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        p {
+            font-size: 120%;
+        }
+        #link-bio:link {
+            color: blue;
+        }
+        #link-bio:visited {
+            color: black;
+        }
 
-      a.link-bio:link { color: #d97706; }
-      a.link-bio:visited { color: #78350f; }
+        #link-today:link {
+            color: brown;
+        }
+        #link-today:visited {
+            color: blueviolet;
+        }
 
-      a.link-now:link { color: #16a34a; }
-      a.link-now:visited { color: #14532d; }
+        #link-friends:link {
+            color: rgb(88, 1, 8);
+        }
+        #link-friends:visited {
+            color: rgb(41, 56, 44);
+        }
 
-      a.link-friends:link { color: #2563eb; }
-      a.link-friends:visited { color: #1e3a8a; }
-
-      a.link-gallery:link { color: #9333ea; }
-      a.link-gallery:visited { color: #581c87; }
+        #link-gallery:link {
+            color: rgb(0, 83, 51);
+        }
+        #link-gallery:visited {
+            color: rgb(49, 7, 165);
+        }
     </style>
 </head>
 <body>
 
-    <h1>Лабораторна робота Максиміва Євгенія Івановича</h1>
-    <p>Ласкаво просимо на мій персональний веб-сайт. Оберіть розділ для перегляду:</p>
+    <h1>Персональна сторінка Максиміва Євгенія Івановича</h1>
 
-    <ul>
-      <li><a class="link-bio" href="biography.html">Автобіографія</a></li>
-      <li><a class="link-now" href="nowadays.html">Сьогодення</a></li>
-      <li><a class="link-friends" href="friends.html">Друзі</a></li>
-      <li><a class="link-gallery" href="gallery.html">Галерея</a></li>
-    </ul>
+    <p>Мене звати Максимів Євгеній Іванович, мені 19 років. Я навчаюся в Карпатському національному університеті імені Василя Стефаника. Окрім навчання, активно захоплююся програмуванням — мені подобається створювати щось нове за допомогою коду та розбиратися в сучасних технологіях. Щоб тримати себе в тонусі, займаюся спортом, а у вільний час люблю відпочити під хорошу музику, яка допомагає мені перезавантажитися або, навпаки, зловити робочий фокус.</p>
+
+    <p><a id="link-bio" href="biography.html">Автобіографія</a></p>
+    <p><a id="link-today" href="nowadays.html">Сьогодення</a></p>
+    <p><a id="link-friends" href="friends.html">Друзі</a></p>
+    <!-- Виправлено ID та href на gallery.html -->
+    <p><a id="link-gallery" href="gallery.html">Галерея</a></p>
 
 </body>
 </html>
