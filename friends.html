@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Друзі</title>
+
     <style>
       h1 {
         text-align: center;
         font-size: 22px;
       }
+
       p.back-link {
         font-style: italic;
       }
-      h2 {
+
+      #friends-title {
         text-align: center;
       }
 
@@ -21,23 +24,29 @@
         margin-top: 15px;
       }
 
+      caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
       th, td {
         border: 1px solid black;
-        padding: 8px;
+        padding: 8px 12px;
+        text-align: left;
       }
 
       th {
-        text-align: center;
         background-color: green;
         color: white;
+        text-align: center;
         font-weight: bold;
       }
 
-      tbody tr:nth-child(odd) {
+      tr:nth-child(even) td {
         background-color: lightgray;
       }
 
-      tbody tr:nth-child(even) {
+      tr:nth-child(odd) td {
         background-color: white;
       }
 
@@ -48,40 +57,53 @@
 </head>
 <body>
 
-    <h1>Друзі Максиміва Євгенія Івановича</h1>
+    <h1 id="top">Друзі Максиміва Євгенія Івановича</h1>
     <p class="back-link"><a href="index.html">Назад на головну</a></p>
 
-    <h2>Мої друзі</h2>
+    <h2 id="friends-title">Мої друзі</h2>
 
+    <!-- Забрано атрибут border="1", оскільки границі задано в CSS -->
     <table>
-      <thead>
+        <caption>Список моїх друзів</caption>
         <tr>
-          <th>ПІБ</th>
-          <th>Дата народження</th>
-          <th>Місце проживання</th>
-          <th>Номер телефону</th>
+            <th>Прізвище</th>
+            <th>Ім’я</th>
+            <th>Дата народження</th>
+            <th>Адреса проживання</th>
+            <th>Контактний телефон</th>
         </tr>
-      </thead>
-      <tbody>
+
         <tr>
-          <td>Ковальчук Павло Васильович</td>
-          <td>15.05.2004</td>
-          <td>с. Лисець</td>
-          <td>+380971234567</td>
+            <td>Балан</td>
+            <td>Павло</td>
+            <td>15.05.2004</td>
+            <td>с. Лисець</td>
+            <td>+380501234567</td>
         </tr>
+
         <tr>
-          <td>Петренко Олег Ігорович</td>
-          <td>22.11.2003</td>
-          <td>м. Івано-Франківськ</td>
-          <td>+380509876543</td>
+            <td>Фелик</td>
+            <td>Вікторія</td>
+            <td>15.05.2006</td>
+            <td>с. Лисець</td>
+            <td>+38068717814</td>
         </tr>
+
         <tr>
-          <td>Сидоренко Анна Сергіївна</td>
-          <td>03.08.2004</td>
-          <td>м. Львів</td>
-          <td>+380631112233</td>
+            <td>Онисків</td>
+            <td>Денис</td>
+            <td>13.01.2003</td>
+            <td>с. Лисець</td>
+            <td>+3806812412</td>
         </tr>
-      </tbody>
+
+        <tr>
+            <td>Білогубка</td>
+            <td>Павло</td>
+            <td>15.01.2007</td>
+            <td>с. Лисець</td>
+            <td>+3806545741</td>
+        </tr>
     </table>
 
 </body>
